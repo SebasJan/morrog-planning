@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: longreach;
+    src: url('/fonts/longreach.otf');
+}
+
+@font-face {
+    font-family: evanston;
+    src: url('/fonts/evanston.ttf');
+}
+
