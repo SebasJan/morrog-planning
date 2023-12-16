@@ -12,3 +12,6 @@
     src: url('/fonts/evanston.ttf');
 }
 
+body {
+    background-color: #1f1f23;
+}

@@ -31,13 +31,19 @@ const getItemTime = computed(() => {
 });
 
 const enableMinimalicInfo = computed(() => { 
-    return minutes.value <= 30 ? 'flex items-center' : ''
+    return minutes.value <= 40 ? 'flex items-center' : ''
+});
+
+const completed = computed(() => {
+    const currentDate = new Date();
+
+    return currentDate > item.value.endTime ? 'opacity-50' : 'hover:scale-110';
 })
 </script>
 
 <template>
-    <div class="border-l border-l-4 border-indigo-600 mb-1 py-1 px-2 rounded-lg text-white "
-        :class="[item.color, enableMinimalicInfo]" 
+    <div class="border-l border-l-4 border-indigo-600 mb-1 py-1 px-2 rounded-lg text-white ease-in duration-250"
+        :class="[item.color, enableMinimalicInfo, completed]" 
         :style="{ height: `${minHeightInPixels}px`}">
         <h5 class="font-bold">{{ item.name }}</h5>
         <p v-show="enableMinimalicInfo !== ''">,</p>
