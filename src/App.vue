@@ -102,7 +102,7 @@ const secondDay = [
   <div class="container mx-auto max-w-4xl">
     <h2 class="text-6xl text-center font-longreach">Morrog 10 Year Anniversary</h2>
     <h3 class="text-center text-6xl font-longreach text-blue-600 mb-5">December</h3>
-    <div class="grid grid-cols-2 gap-4">
+    <div class="px-4 md:px-0 md:grid grid-cols-2 gap-4">
       <PerDayFillIn 
         title="Zaterdag 16"
         :items="firstDay"
